@@ -1,0 +1,31 @@
+{
+  "name": "hs-disc-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for hearthstone cards",
+  "main": "client.js",
+  "dependencies": {
+    "discord.io": "^1.8.2",
+    "dotenv": "^2.0.0",
+    "handlebars": "^4.0.5",
+    "unirest": "^0.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NuffZetPand0ra/nodeHsDiscBot.git"
+  },
+  "keywords": [
+    "hearthstone",
+    "discord",
+    "bot"
+  ],
+  "author": "Nuffy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NuffZetPand0ra/nodeHsDiscBot/issues"
+  },
+  "homepage": "https://github.com/NuffZetPand0ra/nodeHsDiscBot#readme"
+}
