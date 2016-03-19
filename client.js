@@ -6,7 +6,7 @@ var DiscordClient = require('discord.io')
 var bot = new DiscordClient({
     autorun: true,
     email: process.env.DISCORD_EMAIL,
-    password: process.env.DISCORD_PASSWORD,
+    password: process.env.DISCORD_PWD,
     //OR
     token: ""
 });
