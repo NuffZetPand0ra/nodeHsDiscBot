@@ -2,6 +2,7 @@ require('dotenv').config();
 var DiscordClient = require('discord.io')
   , unirest = require('unirest')
   , Handlebars = require('handlebars')
+  , md = require('html-md');
   ;
 var bot = new DiscordClient({
     autorun: true,
