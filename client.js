@@ -31,6 +31,16 @@ var responseMessages = [
 			  + "Card text: {{text}}\n"
 			  + "{{img}}"
 		}
+	  , {
+			"type":"Weapon"
+		  , "template":"\n"
+			  + "**{{name}}**\n"
+			  + "{{rarity}} {{#if playerClass}}{{playerClass}} {{/if}}{{type}} from the {{cardSet}} set\n"
+			  + "Cost: {{cost}} mana\n"
+				+ "Attack: {{attack}}  Durability: {{durability}}"
+			  + "{{#if text}}Card text: {{{text}}}\n{{/if}}"
+			  + "{{img}}"
+		}
 	]
   , templates = {};
 for(var i=0; i<responseMessages.length; i++){
@@ -68,7 +78,7 @@ bot.on('message', function(user, userID, channelID, message, rawEvent) {
 				});	
 			}else{
 				for(var i=0; i<result.body.length; i++){
-					if(result.body[i].type == "Minion" || result.body[i].type == "Spell"){
+					if(result.body[i].type == "Minion" || result.body[i].type == "Spell" || result.body[i].type == "Weapon"){
 						bot.sendMessage({
 							to: channelID,
 							message: templates[result.body[i].type](result.body[i])
