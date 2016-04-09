@@ -18,7 +18,7 @@ var responseMessages = [
 			  + "{{rarity}} {{#if playerClass}}{{playerClass}} {{/if}}{{type}} from the {{cardSet}} set\n"
 			  + "Cost: {{cost}} mana\n"
 			  + "Attack: {{attack}}  Health: {{health}}\n"
-			  + "{{#if text}}Card text: {{text}}\n{{/if}}"
+			  + "{{#if text}}Card text: {{{text}}}\n{{/if}}"
 			  + "{{img}}"
 		}
 	  , {
@@ -45,7 +45,7 @@ bot.on('ready', function() {
 
 bot.on('message', function(user, userID, channelID, message, rawEvent) {
 	var search
-	  , cardnamePattern = /\[([A-Za-z0-9 \']+)\]/
+	  , cardnamePattern = /\[([A-Za-z0-9 \'\.]+)\]/
 	  ;
     if (message === "ping") {
         bot.sendMessage({
