@@ -37,7 +37,7 @@ var responseMessages = [
 			  + "**{{name}}**\n"
 			  + "{{rarity}} {{#if playerClass}}{{playerClass}} {{/if}}{{type}} from the {{cardSet}} set\n"
 			  + "Cost: {{cost}} mana\n"
-				+ "Attack: {{attack}}  Durability: {{durability}}"
+				+ "Attack: {{attack}}  Durability: {{durability}}\n"
 			  + "{{#if text}}Card text: {{{text}}}\n{{/if}}"
 			  + "{{img}}"
 		}
